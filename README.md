@@ -1,3 +1,6 @@
+# REMS_UI_Dashboard
+This repo containe all code related to admin panel
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
