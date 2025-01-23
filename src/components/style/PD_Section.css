@@ -1,0 +1,766 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.Heading {
+    /* display: grid; */
+    /* justify-content: center; */
+    font-size: x-large;
+    text-align: center;
+    color: #600303;
+    background: rgb(179,20,240);
+background: linear-gradient(273deg, rgba(179,20,240,1) 0%, rgba(1,1,120,1) 7%, rgba(0,184,148,1) 98%);
+    height: 121px;
+    width: 100%;
+    /* opacity: 0.8; */
+}
+.Heading h2{
+    padding-top: 20px;
+}
+
+/* Property Details Container */
+.property-details {
+    padding: 20px;
+    background: rgb(112,38,140);
+background: linear-gradient(90deg, rgba(112,38,140,1) 0%, rgba(1,1,120,1) 61%, rgba(0,184,148,1) 100%);
+    border-radius: 10px;
+    border:2px solid #000000 ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/* Property Header */
+.property-header {
+    color: black;
+    /* text-align: center; */
+}
+
+.property-header h1 {
+    font-size: 28px;
+    /* margin-bottom: 10px; */
+    margin-top: 15px;
+}
+
+/* Property Status */
+.property-status {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap; /* Adjust for smaller screens */
+    margin-bottom: 20px;
+}
+
+.property-type, 
+.property-price,
+.property-type1 , 
+.last-updated {
+    margin: 5px; /* Adds space between elements */
+}
+
+/* Property Type Label */
+.property-type {
+    background-color: #b71515;
+    color: #fff;
+    width: 132px;
+    /* border:2px solid #000000 ; */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.property-type1 {
+    background-color: #1d8109;
+    color: #fff;
+    width: 60px;
+    /* border:2px solid #000000 ; */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Property Price */
+.property-price {
+    font-size: 24px;
+    
+    color: #ff5733;
+    margin-right: 10px;
+}
+
+/* Last Updated */
+.last-updated {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Buttons */
+.property-buttons {
+    /* border:2px solid #000000 ; */
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap; /* Ensures buttons stack on smaller screens */
+    margin-top: 20px;
+}
+
+.property-buttons button {
+    background-color: #5a2d8b;
+    color: #fff;
+    /* border:2px solid #503939 ; */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.hr{
+    color:black;
+    margin-top: 20px;
+}
+.property-buttons button:hover {
+    background-color: #b46be4;
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}
+
+/* Icon styling */
+.property-buttons i {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* Overview Section */
+.overview-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   margin: 20px 40px;
+    border:2px solid #8d1800 ;
+    position: relative;
+    /* margin: 20px 0px; */
+    max-width: 680px;
+}
+
+/* Overview Title */
+.overview-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #5a2d8b;
+    text-align: center;
+}
+
+/* Property Description */
+.property-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Property Features List */
+.property-features {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.property-features li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.property-features li i {
+    color: #5a2d8b;
+    margin-right: 8px;
+}
+/* Description Section */
+.description-section {
+   
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border:2px solid #8d1800 ;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+       /* margin: 37px 40px; */
+        position: relative;
+        margin: 20px 40px;
+        max-width: 680px;
+    
+}
+
+/* Description Title */
+.description-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #5a2d8b;
+    text-align: center;
+}
+
+/* Property Description Text */
+.description-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Images Section Styling */
+.images-section {
+    /* max-width: 680px; */
+    border:2px solid #8d1800 ;
+    max-width: 680px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 12px;
+    padding-top: 32px;
+    background-color: white;
+    margin: 40px 40px;
+    /* text-align: center; */
+}
+.images-section h3{
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-image-container {
+    width: 95%;
+    height: 270px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.main-image-container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.main-image-container:hover .main-image {
+    transform: scale(1.05);
+}
+
+.thumbnail-images {
+    display: table-row-group;
+    /* justify-content: center; */
+    /* gap: 10px; */
+}
+
+.thumbnail {
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: transform 0.3s, border 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.active-thumbnail {
+    border: 2px solid #007bff;
+}
+
+.thumbnail:hover,
+.active-thumbnail:hover {
+    border-color: #0056b3;
+}
+
+
+/* Property Address Section */
+.property-address {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border:2px solid #8d1800 ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   /* margin: 37px 40px; */
+    position: relative;
+    margin: 20px 40px;
+    max-width: 680px;
+}
+
+.property-address h3 {
+    font-size: 24px;
+    color: #5a2d8b;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Address Details */
+.address-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.address-item {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+}
+
+.value {
+    margin-left: 5px;
+    color: #777;
+    font-size: 16px;
+}
+
+/* Property Details Section */
+.property-details1 {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   margin: 20px 40px;
+    border:2px solid #8d1800 ;
+    position: relative;
+    /* margin: 20px 0px; */
+    max-width: 680px;
+}
+
+.property-details1 h3 {
+    font-size: 24px;
+    color: #5a2d8b;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Details Grid */
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.detail-value {
+    color: #777;
+}
+/* Amenities Section */
+.amenities {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   /* margin: 37px 40px; */
+    border:2px solid #8d1800 ;
+    position: relative;
+    margin: 20px 40px;
+    max-width: 680px;
+}
+
+.amenities h3 {
+    font-size: 24px;
+    color: #5a2d8b;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px; /* Space between grid items */
+}
+
+.amenity-item {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.amenity-item:hover {
+    background-color: #e1e1e1;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Container for the Request Info section */
+.request-info {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .request-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for form inputs */
+  .request-info .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .request-info .form-group label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .request-info .form-group input,
+  .request-info .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .request-info .form-group input:focus,
+  .request-info .form-group textarea:focus {
+    border-color: #ff5733;
+    outline: none;
+  }
+  
+  /* Style for the message textarea */
+  .request-info .form-group textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  .request-info .submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #5a2d8b;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .request-info .submit-btn:hover {
+    background-color: #ff5733;
+  }
+  .request-info .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Style the chat button */
+  .request-info .submit-btn.chat-btn {
+    background-color: #2d89eb;
+  }
+  
+  .request-info .submit-btn.chat-btn:hover {
+    background-color: #1d63bf;
+  }
+  
+
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .property-header h1 {
+        font-size: 24px;
+    }
+
+    /* Adjust price size for medium devices */
+    .property-price {
+        font-size: 22px;
+    }
+    
+    /* Stack buttons on smaller screens */
+    .property-buttons button {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+    
+    /* Adjust font size */
+    .overview-section h3 {
+        font-size: 22px;
+    }
+
+    .property-description {
+        font-size: 15px;
+    }
+
+    .property-features li {
+        font-size: 14px;
+    }
+    .description-section h3 {
+        font-size: 22px;
+    }
+
+    .description-section p {
+        font-size: 15px;
+    }
+    .main-image-container {
+        height: 200px;
+    }
+    .main-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: 60px;
+    }
+    .address-item {
+        width: 100%;
+    }
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    .amenities h3 {
+        font-size: 22px;
+    }
+
+    .amenity-item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+/* Further reduce font size for smaller screens */
+.property-header h1 {
+    font-size: 20px;
+}
+
+/* Reduce price size */
+.property-price {
+    font-size: 20px;
+}
+
+/* Reduce button size for small screens */
+.property-buttons button {
+    font-size: 14px;
+    padding: 8px 10px;
+}
+
+/* Center status elements vertically */
+.property-status {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.property-type, 
+.property-price, 
+.last-updated {
+    margin: 5px 0;
+    text-align: left;
+}
+
+
+    /* Adjust font size for small devices */
+    .overview-section h3 {
+        font-size: 20px;
+    }
+
+    .property-description {
+        font-size: 14px;
+    }
+
+    .property-features {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .property-features li {
+        width: 100%;
+        font-size: 14px;
+    }
+    .description-section h3 {
+        font-size: 20px;
+    }
+
+    .description-section p {
+        font-size: 14px;
+    }
+    .main-image-container {
+        height: 200px;
+    }
+    .main-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .thumbnail-images {
+        gap: 6px;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 50px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .property-address h3 {
+        font-size: 22px;
+    }
+
+    .value {
+        font-size: 15px;
+    }
+    .property-details1 h3 {
+        font-size: 22px;
+    }
+
+    .detail-label {
+        font-size: 14px;
+    }
+
+    .detail-value {
+        font-size: 14px;
+    }
+    .amenities h3 {
+        font-size: 20px;
+    }
+
+    .amenity-item {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .property-header h1 {
+        font-size: 18px;
+    }
+
+    /* Reduce button padding for very small screens */
+    .property-buttons button {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    /* Reduce property price for extra small screens */
+    .property-price {
+        font-size: 18px;
+    }
+
+    .overview-section h3 {
+        font-size: 18px;
+    }
+
+    .property-description {
+        font-size: 13px;
+    }
+
+    .property-features li {
+        font-size: 13px;
+    }
+    .description-section h3 {
+        font-size: 18px;
+    }
+
+    .description-section p {
+        font-size: 13px;
+    }
+    .main-image-container {
+        height: 150px;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .thumbnail-images {
+        gap: 5px;
+    }
+
+    .thumbnail {
+        width: 50px;
+        height: 40px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+    .property-address h3 {
+        font-size: 20px;
+    }
+
+    .value {
+        font-size: 14px;
+    }
+    .property-details h3 {
+        font-size: 20px;
+    }
+
+    .detail-label {
+        font-size: 12px;
+    }
+
+    .detail-value {
+        font-size: 12px;
+    }
+    .amenities h3 {
+        font-size: 18px;
+    }
+
+    .amenity-item {
+        font-size: 12px;
+    }
+}

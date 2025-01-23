@@ -1,0 +1,49 @@
+.statistics-section {
+    background-color: #5a2d8b; /* Dark purple background */
+    padding: 40px 0; /* Adjusted padding for a compact layout */
+    text-align: center;
+    color: #fff; /* Text color */
+    border-bottom: 5px solid #068a27;
+}
+
+.statistics-section .container {
+    display: flex;
+    justify-content: space-around; /* Space between cards */
+    flex-wrap: wrap; /* Allow wrapping of cards on smaller screens */
+    max-width: 1200px; /* Maximum width to keep cards aligned */
+    margin: 0 auto; /* Center the container */
+}
+.main{
+  
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+
+}
+.statistic-card {
+    background-color: #ffffff0a;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(45% - 30px);
+    box-shadow: 0 4px 8px rgb(255 255 255 / 50%);
+    color: #16101c;
+    margin: 13px 30px;
+    flex: 1 1 170px; /* Flex grow/shrink with a base width */
+}
+
+.statistic-card .icon {
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px; /* Space below icon */
+    color: #ffffff; /* Dark purple color for icons */
+}
+
+.statistic-card h3 {
+    font-size: 24px; /* Heading size */
+    margin: 10px 0; /* Space above and below heading */
+}
+
+.statistic-card p {
+    font-size: 16px;
+    color: #f5dcdc;/* Grey for paragraph text */
+}
+

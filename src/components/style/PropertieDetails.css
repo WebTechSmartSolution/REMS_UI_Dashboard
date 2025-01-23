@@ -1,0 +1,47 @@
+/* Main container for the left and right side */
+.Parent {
+  display: flex; /* Enable flexbox for the container */
+  justify-content: space-between; /* Adjust space between the left and right divs */
+  margin: 20px 60px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  width: 88vw;
+  padding: 0 20px;
+}
+.book-btn{
+  margin-top: 40px;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #5a2d8b;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+/* Left side div takes 60% of the width */
+.left-side {
+  margin-right: 20px;
+  flex: 1;
+  max-width: 60%; /* Flexbox container */
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Right side div takes 35% of the width */
+.right-side {
+  flex: 1;
+  max-width: 35%; /* Allocate 35% to the right side */
+
+  flex-direction: column; /* Stack children in a column */
+}
+
+/* Responsive behavior for mobile screens */
+@media (max-width: 768px) {
+  .left-side,
+  .right-side {
+    min-width: 300px;
+    width: 100% !important;
+  }
+}

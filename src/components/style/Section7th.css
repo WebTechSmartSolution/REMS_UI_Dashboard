@@ -1,0 +1,92 @@
+/* Partners section styling */
+.partners-section {
+    /* padding: 31px 6px; */
+    padding-top: 49px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #f8f9fc;
+    border-bottom: 5px solid #08004d;
+}
+  
+  .partners-section h2 {
+    font-size: 32px;
+    color: #5a2d8b;
+    margin-bottom: 40px;
+  }
+  .main{
+  
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+
+}
+  .partners-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Each partner card */
+  .partner-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+  }
+  
+  .partner-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .partner-info h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .partner-info p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  /* Scrolling ticker */
+  .ticker-wrapper {
+    overflow: hidden;
+    margin-top: 40px;
+    border-top: 2px solid #e91414;
+    background-color: #e9e9e3;
+    border-bottom: 2px solid #e91414;
+}
+  
+  .rating {
+    font-size: 14px;
+    color: #ff5733;
+    margin-bottom: 10px;
+  }
+  .ticker {
+    display: flex;
+    animation: scroll 15s linear infinite;
+  }
+  
+  .logo-image {
+    width: 120px;
+    height: 59px;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

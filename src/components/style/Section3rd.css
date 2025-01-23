@@ -1,0 +1,92 @@
+.property-type-section {
+    background-color: #5a2d8b; /* Dark purple background */
+    padding: 60px 0;
+    text-align: center;
+    color: #fff; /* Text color */
+    border-bottom: 5px solid #020844;
+}
+
+.property-type-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.property-type-section p {
+    margin-bottom: 30px; /* Adjusted to reduce space */
+    color: #d1c4e9; /* Light purple for paragraph */
+}
+.main{
+  
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+
+}
+.nav-line {
+    width: 60px; /* Length of the navigation line */
+    height: 4px; /* Thickness of the line */
+    background-color: #ff5733; /* Color of the line */
+    margin: 0 auto 12px; /* Centered and margin below */
+}
+
+.property-types-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.property-types-wrapper {
+    overflow: hidden;
+    width: 60%;
+}
+
+.property-types {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.property-type-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px; /* Spacing between cards */
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.property-type-card:hover {
+    transform: translateY(-10px);
+}
+
+.property-type-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #5a2d8b; /* Dark purple for icons */
+}
+
+.property-type-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #5a2d8b; /* Dark purple for headings */
+}
+
+.property-type-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.prev, .next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff; /* White for arrows */
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    color: #ff5733; /* Change color on hover */
+}

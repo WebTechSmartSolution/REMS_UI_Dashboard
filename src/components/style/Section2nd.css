@@ -1,0 +1,101 @@
+.how-it-works-section {
+  padding: 50px 0;
+  background-color: #f2f4f8;
+ 
+  border-bottom: 5px solid #ff7200;
+}
+
+.how-it-works-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+.nav-line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-line span {
+  width: 100px;
+  height: 4px;
+  background-color: #f23c43;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.how-it-works-description {
+  text-align: center;
+  font-size: 16px;
+  color: #6a6f73;
+  margin-bottom: 40px;
+}
+.main{
+  
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+
+}
+.step:hover{
+  background-color: rgb(99, 228, 99);
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+  flex-wrap: wrap; /* Added to allow wrapping */
+}
+
+.step {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px dashed  #ed9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  border: 2px dashed  #110909;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+  font-size: 50px; /* Adjust icon size */
+  color: #f23c43; /* Icon color to match the theme */
+  margin-bottom: 20px;
+}
+
+.step h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #2e2e2e;
+}
+
+.step p {
+  font-size: 16px;
+  color: #6a6f73;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .steps-container {
+      justify-content: center; /* Center items on smaller screens */
+  }
+
+  .step {
+      width: 80%; /* Make steps full-width on smaller screens */
+      margin-bottom: 20px; /* Add space between wrapped items */
+  }
+}

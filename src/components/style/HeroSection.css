@@ -1,0 +1,198 @@
+/* HeroSection.css */
+
+.hero {
+    background: linear-gradient(to right, #003366, #008000); /* Dark blue and green gradient */
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.hero-left,
+.hero-right {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+.hero-title{
+    color:#e4ff57
+}
+.hero-left .hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-left .hero-title .dynamic-text {
+    color: #00ff7f; /* Neon green for dynamic effect */
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-buttons .Link,.secondary {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: #00509e;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .secondary {
+    background: #00a86b;
+}
+
+.cta-buttons .Link:hover,.secondary:hover {
+    transform: scale(1.05);
+    background: #00b7c2; /* Hover effect */
+}
+
+.hanging-images {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hanging-images img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: rotate(-10deg);
+    transition: transform 0.3s ease;
+}
+
+.hanging-images img:hover {
+    transform: rotate(0deg) scale(1.1);
+}
+
+/* Right Side */
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.multi-card {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-frame {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-frame:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+/* HeroSection.css */
+
+/* Existing styles remain unchanged */
+
+.hanging-images {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    position: relative;
+    perspective: 1000px; /* Adds 3D effect */
+}
+
+.hanging-images img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: swing 2s infinite ease-in-out;
+    transform-origin: top center;
+}
+
+/* Keyframes for Tea Patti Swing Effect */
+@keyframes swing {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+/* HeroSection.css */
+
+/* Cutting Effect for Title */
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    line-height: 1.2;
+    overflow: hidden; /* Ensures text clipping works correctly */
+}
+
+.hero-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #003b8b, #00a36c); /* Gradient line */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.hero-title .dynamic-text {
+    display: inline-block;
+    position: relative;
+    z-index: 2; /* Ensures text is above the gradient line */
+    color: #00a36c;
+    animation: text-cut 2s infinite alternate; /* Optional dynamic effect */
+}
+
+/* Optional Animation for Dynamic Text */
+@keyframes text-cut {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-left .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-left p {
+        font-size: 1rem;
+    }
+
+    .card-frame {
+        width: 100%;
+        height: auto;
+    }
+}

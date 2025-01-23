@@ -1,0 +1,93 @@
+/* User Page Main Container */
+.user-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Page Heading */
+.user-page h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Total Users Count Container */
+.total-users {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Container */
+.user-table-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Action Buttons */
+.p-button {
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.p-button-rounded {
+  border-radius: 50% !important; /* Makes buttons round */
+  padding: 8px 12px !important; /* Adjust size */
+}
+
+.p-button-success {
+  background-color: #2ecc71 !important;
+  border: none;
+}
+
+.p-button-danger {
+  background-color: #e74c3c !important;
+  border: none;
+}
+
+.p-button-edit {
+  background-color: #FFC107; /* Yellow color for edit */
+}
+
+.p-button-delete {
+  background-color: #E74C3C; /* Red color for delete */
+}
+
+/* Search Input */
+.p-inputtext {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Modal styles */
+.p-dialog .p-button {
+  margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .total-users {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .p-button {
+      margin: 5px 0;
+  }
+}

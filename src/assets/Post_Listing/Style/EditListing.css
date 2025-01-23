@@ -1,0 +1,610 @@
+.Parent_Main{
+    background-color: white;
+    width: 98%;
+  }
+  
+  .heading {
+      background-color: #4a4a97;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .heading h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    
+    .breadcrumb {
+      margin-top: 10px;
+      color: #fff;
+      justify-content: center;
+      font-size: 14px;
+    }
+    
+    .breadcrumb .heading-links {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    
+     .heading-links:hover {
+      text-decoration: underline;
+    }
+    
+  
+    .Tab_Container {
+      background-color: #fff;
+      padding: 15px 20px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .tab-links {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .tab-links {
+      color: #4a4a97;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .tab-links:hover {
+      background-color: #ebebff;
+    }
+    
+    .tab-links.active {
+      background-color: #4a4a97;
+      color: #fff;
+    }
+    
+    /* Responsive styles for screen sizes between 768px and 350px */
+    @media (max-width: 768px) {
+      .Tab_Container {
+        flex-direction: column; /* Stack the tabs vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+      }
+    
+      .Tab_Container .tab-links {
+        font-size: 12px;
+        padding: 8px 12px;
+        width: 100%; /* Make each link take up the full width */
+        text-align: center; /* Center the text */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .Tab_Container .tab-links{
+        font-size: 10px; /* Reduce font size further for very small screens */
+        padding: 6px 10px;
+      }
+    }
+  
+    /* Container for Property Info Section */
+  .property-info-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .property-info-section, .property-details-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .info-description, .details-description {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .info-inputs-container, .details-inputs-container {
+    flex: 1.5;
+  }
+  
+  .info-inputs, .details-inputs {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .info-description h3, .details-description h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .info-description p, .details-description p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Form Groups */
+  .info-form-group, .details-form-group {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-form-group label, .details-form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .info-input, .details-input, .info-select, .details-select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .info-input:focus, .details-input:focus, .info-select:focus, .details-select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .property-info-section, .property-details-section {
+      flex-direction: column;
+    }
+  
+    .info-inputs, .details-inputs {
+      flex-direction: column;
+    }
+  
+    .info-form-group, .details-form-group {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .property-info-section, .property-details-section {
+      padding: 20px;
+    }
+  
+    .info-description h3, .details-description h3 {
+      font-size: 20px;
+    }
+  
+    .info-description p, .details-description p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .property-info-section, .property-details-section {
+      padding: 10px;
+    }
+  
+    .info-inputs, .details-inputs {
+      padding: 8px;
+    }
+  
+    .info-form-group label, .details-form-group label {
+      font-size: 12px;
+    }
+  
+    .info-input, .details-input {
+      padding: 8px;
+    }
+  }
+  
+  
+    /* Main Amenities Section Styling */
+  .amenities-section {
+    display: flex; 
+      padding: 30px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+  }
+  
+  /* Flexbox to layout heading/description on left, inputs on right */
+  .amenities-container {
+    display: flex;
+      justify-content: space-between;
+      /* padding: 30px; */
+      background-color: #f9f9f9;
+      border-radius: 10px
+  }
+  
+  /* Left Side: Description (heading and paragraph) */
+  .amenities-description {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .amenities-description h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .amenities-description p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Right Side: Inputs Area */
+  .amenities-inputs {
+    flex: 1.45;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Grid Layout for Inputs */
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px;
+  }
+  
+  .amenity-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .amenity-item input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: #4caf50; /* Custom checkbox color */
+    cursor: pointer;
+  }
+  
+  .amenity-item label {
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .amenities-container {
+        flex-direction: column;
+    }
+  
+    .amenities-description {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+  
+    .amenities-inputs {
+        padding: 15px;
+    }
+  
+    .amenities-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .amenities-section {
+        padding: 20px;
+    }
+  
+    .amenities-description h3 {
+        font-size: 20px;
+    }
+  
+    .amenities-description p {
+        font-size: 14px;
+    }
+  
+    .amenities-inputs {
+        padding: 10px;
+    }
+  
+    .amenity-item label {
+        font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .amenities-description h3 {
+        font-size: 18px;
+    }
+  
+    .amenities-description p {
+        font-size: 12px;
+    }
+  
+    .amenities-inputs {
+        padding: 8px;
+    }
+  
+    .amenity-item label {
+        font-size: 12px;
+    }
+  
+    .amenities-grid {
+        gap: 10px; /* Reduce gap between items on smaller screens */
+    }
+  }
+  
+  
+    /* General Container Styles */
+  .file-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* Heading Style */
+  .file-upload-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Custom File Input Style */
+  .custom-file-input input[type="file"] {
+    display: none; /* Hide the default file input */
+  }
+  
+  .custom-file-input .file-label {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-file-input .file-label:hover {
+    background-color: #45a049;
+  }
+  
+  /* Description Text */
+  .file-upload-description {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design for Different Screen Sizes */
+  
+  /* For tablet screens down to 768px */
+  @media (max-width: 768px) {
+    .file-upload-container {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .file-upload-heading {
+      font-size: 22px;
+    }
+  
+    .custom-file-input .file-label {
+      padding: 10px 25px;
+      font-size: 14px;
+    }
+  
+    .file-upload-description {
+      font-size: 13px;
+    }
+  }
+  
+  /* For mobile screens down to 350px */
+  @media (max-width: 576px) {
+    .file-upload-container {
+      padding: 10px;
+    }
+  
+    .file-upload-heading {
+      font-size: 20px;
+    }
+  
+    .custom-file-input .file-label {
+      padding: 8px 20px;
+      font-size: 12px;
+    }
+  
+    .file-upload-description {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .custom-file-input .file-label {
+      padding: 6px 15px;
+      font-size: 10px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .properties-location-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .left-column {
+    flex: 1;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .right-column {
+    flex: 1.43;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .form-group-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .properties-location-section {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-group-row {
+      flex-direction: column;
+    }
+  
+    .input-field {
+      font-size: 14px;
+    }
+  
+    .submit-button {
+      width: 100%;
+    }
+  }
+  .button-section {
+    display: flex;
+    justify-content: center;
+    
+    gap: 15px;
+  }
+  
+  .reset-button,
+  .submit-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reset-button {
+    background-color: #d9534f;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .reset-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 480px) {
+    .button-section {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .reset-button,
+    .submit-button {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  .error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 0.3em;
+  }
+
+  .info-select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .info-select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
